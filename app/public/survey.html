@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder - Survey</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <style>
+        .centered {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div style="background-color: rgb(70, 70, 70);; color: white;" class="jumbotron centered">
+            <h1>
+                <span class="glyphicon glyphicon-search"></span> Friend Finder</h1>
+            <hr>
+
+        </div>
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <strong>Survey</strong>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form method="POST" role="form">
+
+                            <div class="form-group">
+                                <label for="name">Name (Required)</label>
+                                <input type="text" class="form-control" placeholder="ex. John Snow" id="name">
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="photo">Link to Photo Image (Required) </label>
+                                <input type="text" class="form-control" placeholder="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
+                                    id="photo">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="q1">Do you play video games?</label>
+                                <select class="form-control" id="q1">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="q2">Do you enjoy reading?</label>
+                                <select class="form-control" id="q2">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="q3">Do you enjoy the outdoors?</label>
+                                <select class="form-control" id="q3">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="q4">Healthy food over junk food?</label>
+                                <select class="form-control" id="q4">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="q5">Does your partner have to be good looking?</label>
+                                <select class="form-control" id="q5">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="q6">Are you adventurous</label>
+                                <select class="form-control" id="q6">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="q7">Do you love to eat?</label>
+                                <select class="form-control" id="q7">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="q8">Winter is welcoming</label>
+                                <select class="form-control" id="q8">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="q9">When solving problems, emotions are important</label>
+                                <select class="form-control" id="q9">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="q10">Always nice to have a good laugh at any time</label>
+                                <select class="form-control" id="q10">
+                                    <option value="" selected disabled hidden>Please select</option>
+                                    <option value=1>1 (Never)</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5 (All the time)</option>
+                                </select>
+                            </div>
+
+                        </form>
+                        <br>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary btn-md" id="add-btn">
+                                <span class="glyphicon glyphicon-ok"></span> Submit Results </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer botm">
+
+            <a href="/api/friends"> API Friends List </a>
+            |
+            <a href="#"> GitHub Repo </a>
+
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        $("#add-btn").on("click", function (event) {
+
+            event.preventDefault();
+
+            function validForm() {
+                if ($('#name').val()===''||$('#photo').val()===''){
+                    return false;
+                }
+                
+                for (var i = 1; i < 11; i++) {
+                    if (($("#q" + i).val()===null)){
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            if (validForm()) {
+                var res = [];
+                for (var i = 1; i < 11; i++) {
+                    res.push($("#q" + i).val())
+                }
+                var newFriend = {
+                    "name": $("#name").val().trim(),
+                    "photo": $("#photo").val().trim(),
+                    "scores": res
+                };
+
+                $.post("/api/friends", newFriend)
+                   
+
+            }
+
+            else{
+                alert("Please fill out the entire form before submitting!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
